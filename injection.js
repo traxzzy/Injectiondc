@@ -74,10 +74,10 @@ function injectNotify() {
                 "color": 0,
                 "fields": fields,
                 "author": {
-                    "name": "try"
+                    "name": "trax"
                 },
                 "footer": {
-                    "text": "try"
+                    "text": "trax"
                 }
             }]
         })
